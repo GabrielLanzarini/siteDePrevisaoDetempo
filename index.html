@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>weather</title>
+</head>
+<body>
+
+    <main>
+
+        <div class="divBotoeDias">
+            
+            <button class="botaoDia botaoDiaAtivado"></button>
+            <button class="botaoDia"></button>
+            <button class="botaoDia"></button>
+        </div>
+        
+        <div class="divInfoDias">
+            <div class="divBotoesRegiao">
+                <div class="divBotoesInt">
+                    <button class="botaoRegiao botaoAtivado">Sul</button>
+                </div>
+                <div class="divBotoesInt">
+                    <button class="botaoRegiao">Sudeste</button>
+                </div>
+                <div class="divBotoesInt">
+                    <button class="botaoRegiao">Norte</button>
+                </div>
+                <div class="divBotoesInt">
+                    <button class="botaoRegiao">Nordeste</button>
+                </div>
+    
+                <div class="divBotoesInt">
+                    <button class="botaoRegiao">Centro-oeste</button>
+                </div> 
+            </div>
+            
+            <div class="divInformacoes">
+                <div class="divTextos">
+                    <h1 id="dataPrevisao"></h1>
+                    <p id="descricaoPrevisao">O tempo fica chuvoso no sul da BA e há risco de temporal. No leste de PE e de AL chove a qualquer hora e chove de forma passageira entre o leste do RN, na PB, SE e nordeste da BA. No norte do MA chove à tarde. Tempo firme nas demais áreas.</p>
+                </div>
+                <img id="imgPrevisao" class="imagemPrevisao" src="https://imagens.climatempo.com.br/mapas/yyneprev1.gif" alt="">
+            </div>
+        </div>
+      
+    </main>
+    
+</body>
+
+<script src="Api.js"></script>
+<script src="mudancaBotoes.js"></script>
+</html>
